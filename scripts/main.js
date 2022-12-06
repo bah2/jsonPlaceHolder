@@ -13,7 +13,7 @@ userSearchBtn.onclick = () =>{
   .then(response => response.json())
   .then(data =>{
     
-    outPuts.innerHTML = "The title of the page is: " + data.title + "\n" + "The Id is:" +  data.id;
+    outPuts.innerHTML = "The title of the page is: " + data.title + ",\n" + "The Id is:" +  data.id;
 
   })
 
