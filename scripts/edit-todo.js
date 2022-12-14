@@ -41,7 +41,7 @@ window.onload = () => {
        Completed: document.getElementById("inputUserStatus").value
     }
     fetch(`https://jsonplaceholder.typicode.com/todos/${getInputUserId}`, {
-  method: post,
+  method: 'PUT',
   body: formData
 
     })
@@ -49,7 +49,6 @@ window.onload = () => {
     .then(json =>{
 
       outputOfInput.innerHTML =  `Todo task has been updated`
-
 
     });
     
