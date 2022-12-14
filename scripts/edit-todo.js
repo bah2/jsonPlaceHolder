@@ -25,10 +25,12 @@ window.onload = () => {
       inputUserStatus.value = ftchData.inputUserStatus;
      if(getInputUserId == true){
       getInputUserId.disabled
-      console.log(ftchData);
+      
      }
-     
+     console.log(ftchData);
     })
+
+    
 
   }
 
