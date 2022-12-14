@@ -15,19 +15,19 @@ window.onload = () => {
 
     fetch(`https://jsonplaceholder.typicode.com/todos/${getInputUserId.value}`)
     .then((res) => res.json())
-    .then(ftchData =>{
+    .then(data =>{
 
       let inputUserId = document.getElementById("inputUserId");
-      inputUserId.value = ftchData.inputUserId;
+      inputUserId.value = data.userId;
       let inputUserTitle = document.getElementById("inputUserTitle");
-      inputUserTitle.value = ftchData.inputUserTitle;
+      inputUserTitle.value = data.title;
       let inputUserStatus= document.getElementById("inputUserStatus");
-      inputUserStatus.value = ftchData.inputUserStatus;
+      inputUserStatus.value = data.Completed;
      if(getInputUserId == true){
       getInputUserId.disabled
       
      }
-     console.log(ftchData);
+     console.log(data);
     })
 
     
