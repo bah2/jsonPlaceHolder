@@ -22,7 +22,8 @@ window.onload = () => {
       let inputUserTitle = document.getElementById("inputUserTitle");
       inputUserTitle.value = data.title;
       let inputUserStatus= document.getElementById("inputUserStatus");
-      inputUserStatus.value = data.Completed;
+      inputUserStatus.value = data.completed;
+
      if(getInputUserId == true){
       getInputUserId.disabled
       
@@ -35,7 +36,7 @@ window.onload = () => {
   }
 
   editTodoBtn.onclick = () =>{
-    const outputOfInput = document.getElementById("inputUserStatus");
+    const outputOfInput = document.getElementById("outputOfInput");
     let getInputUserId = document.getElementById("getInputUserId").value
     let formData = {
       userId: document.getElementById("inputUserId").value,
@@ -55,7 +56,7 @@ window.onload = () => {
     });
     
   }
-
+// Redirecting users to the homepage
   cancelTodoBtn.onclick = () =>{
     window.location.replace(`index.html`)
   }
