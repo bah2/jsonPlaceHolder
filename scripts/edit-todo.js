@@ -18,7 +18,7 @@ window.onload = () => {
     .then(data =>{
 
       let inputUserId = document.getElementById("inputUserId");
-      inputUserId.value = data.userId;
+      inputUserId.value = data.id;
       let inputUserTitle = document.getElementById("inputUserTitle");
       inputUserTitle.value = data.title;
       let inputUserStatus= document.getElementById("inputUserStatus");
