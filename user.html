@@ -14,7 +14,7 @@
   <title>Document</title>
 </head>
 
-<body>
+<body class="text-center text-bg-dark" >
   <header>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
@@ -29,7 +29,16 @@
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link active" href="user.html">Users</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="todo.html">Todo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="new-todo.html">New todo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="edit-todo.html">Edit-Todo</a>
             </li>
 
           </ul>
@@ -40,34 +49,31 @@
 
   <main>
 
-    <section class="bg-secondary text-light p-5">
+    <section class="bg-light text-light p-5">
 
       <div class="container">
 
         <div class="row align-items-center justify-content-between">
           <div class="col-md">
 
-           
-            <div class="input-group flex-nowrap">
-              <!-- <span class="input-group-text" id="addon-wrapping"></span> -->
-              <input id="jsonPlaceHolder" type="text" class="form-control"  aria-label="Username" aria-describedby="addon-wrapping">
-            </div>
-            <br>
+            <table id="entireTable" class="table" co>
+              <thead id="tableHead" class="table-secondary">
+                <tr>
+                  <th scope="col">Users ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">User Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Phone</th>
+                  <th scope="col">Website</th>
+                 
+                  
 
-            <button type="button" class="btn btn-dark" id="userSearchBtn">Search</button>
+                </tr>
+              </thead>
+              <tbody id="tableBody" class="table-white">
 
-            <br>
-
-          <!-- <div id="outPuts">
-
-
-          </div> -->
-
-          <p id="outPuts">
-
-          </p>
-
-
+              </tbody>
+            </table>
 
           </div>
 
@@ -89,7 +95,8 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
 
-  <script src="scripts/main.js"></script>
+ 
+  <script src="/scripts/user.js"></script>
 </body>
 
 </html>
