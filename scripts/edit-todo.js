@@ -1,7 +1,6 @@
 
 
 "use strict";
-// const getInputUserId = document.getElementById("getInputUserId");
 const outputOfInput = document.getElementById("outputOfInput");
 const getTodoBtn = document.getElementById("getTodoBtn");
 const editTodoBtn = document.getElementById("editTodoBtn");
